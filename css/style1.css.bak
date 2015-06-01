@@ -1,0 +1,284 @@
+﻿body h1 {
+  color: white;
+  font-family: "Helvetica";
+}
+
+body p {
+  color: white;
+  font-family: "Verdana";
+  margin-top: 10px;
+}
+
+input {
+  -moz-border-radius:5px;
+  -webkit-border-radius:5px;
+  border-radius:5px;
+}
+#input-file {
+  position: relative; /* 保证子元素的定位 */
+  width: 120px;
+  height: 40px;
+  background: #eee;
+  border: 1px solid #ccc;
+  text-align: center;
+  cursor: pointer;
+  -moz-border-radius:5px;
+  -webkit-border-radius:5px;
+  border-radius:1px;
+}
+
+#text {
+  display: inline-block;
+  margin-top: 5px;
+  color: #666;
+  font-family: "黑体";
+  font-size: 18px;
+}
+
+#file {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 120px; /* 宽高和外围元素保持一致 */
+  height: 30px;
+  opacity: 0;
+  -moz-opacity: 0;  /* 兼容老式浏览器 */
+  filter: alpha(opacity=0); /* 兼容IE */
+}
+
+#file1 {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 120px; /* 宽高和外围元素保持一致 */
+  height: 30px;
+  opacity: 0;
+  -moz-opacity: 0;  /* 兼容老式浏览器 */
+  filter: alpha(opacity=0); /* 兼容IE */
+}
+
+#file2 {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 120px; /* 宽高和外围元素保持一致 */
+  height: 30px;
+  opacity: 0;
+  -moz-opacity: 0;  /* 兼容老式浏览器 */
+  filter: alpha(opacity=0); /* 兼容IE */
+}
+
+#xLen::-webkit-outer-spin-button,
+#xLen::-webkit-inner-spin-button {
+  -webkit-appearance: none !important;
+  margin: 0;
+}
+#xLen {
+  -moz-appearance:textfield;
+  width: 120px;
+  height: 30px;
+  color: #666;
+  font-family: "Arial";
+  font-size: 18px;
+  text-align: center;
+}
+#yLen::-webkit-outer-spin-button,
+#yLen::-webkit-inner-spin-button {
+  -webkit-appearance: none !important;
+  margin: 0;
+}
+#yLen {
+  -moz-appearance:textfield;
+  width: 120px;
+  height: 30px;
+  color: #666;
+  font-family: "Arial";
+  font-size: 18px;
+  text-align: center;
+}
+#zLen::-webkit-outer-spin-button,
+#zLen::-webkit-inner-spin-button {
+  -webkit-appearance: none !important;
+  margin: 0;
+}
+#zLen {
+  -moz-appearance:textfield;
+  width: 120px;
+  height: 30px;
+  color: #666;
+  font-family: "Arial";
+  font-size: 18px;
+  text-align: center;
+}
+
+#contantColor {
+  width: 92px;
+  height: 34px;
+}
+
+input[type=range] {
+  -webkit-appearance: none; /* Hides the slider so that custom slider can be made */
+  width: 60%;  /*Specific width is required for Firefox. */
+}
+
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+}
+
+input[type=range]:hover {
+  outline: none; /* Removes the blue border. You should probably do some kind of focus styling for accessibility reasons though. */
+}
+
+input[type=range]::-ms-track {
+  /*  width: 80%;*/
+  cursor: pointer;
+  background: transparent; /* Hides the slider so custom styles can be added */
+  border-color: transparent;
+  color: transparent;
+}
+
+/* Special styling for WebKit/Blink */
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  border: 1px solid #000000;
+  height: 30px;
+  width: 16px;
+  border-radius: 3px;
+  background: #ffffff;
+  cursor: pointer;
+  margin-top: -14px; /* You need to specify a margin in Chrome, but in Firefox and IE it is automatic */
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d; /* Add cool effects to your sliders! */
+}
+
+/* All the same stuff for Firefox */
+input[type=range]::-moz-range-thumb {
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  border: 1px solid #000000;
+  height: 30px;
+  width: 14px;
+  border-radius: 3px;
+  background: #ffffff;
+  cursor: pointer;
+}
+
+/* All the same stuff for IE */
+input[type=range]::-ms-thumb {
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  border: 1px solid #000000;
+  height: 36px;
+  width: 16px;
+  border-radius: 3px;
+  background: #ffffff;
+  cursor: pointer;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 8.4px;
+  cursor: pointer;
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  background: #3071a9;
+  border-radius: 1.3px;
+  border: 0.2px solid #010101;
+}
+
+input[type=range]:hover::-webkit-slider-runnable-track {
+  background: #367ebd;
+}
+
+input[type=range]::-moz-range-track {
+  width: 100%;
+  height: 8.4px;
+  cursor: pointer;
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  background: #3071a9;
+  border-radius: 1.3px;
+  border: 0.2px solid #010101;
+}
+
+input[type=range]::-ms-track {
+  width: 100%;
+  height: 8.4px;
+  cursor: pointer;
+  background: transparent;
+  border-color: transparent;
+  border-width: 16px 0;
+  color: transparent;
+}
+input[type=range]::-ms-fill-lower {
+  background: #2a6495;
+  border: 0.2px solid #010101;
+  border-radius: 2.6px;
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+}
+input[type=range]:hover::-ms-fill-lower {
+  background: #d7d7d7;
+}
+input[type=range]::-ms-fill-upper {
+  background: #d7d7d7;
+  border: 0.2px solid #010101;
+  border-radius: 2.6px;
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+}
+input[type=range]:hover::-ms-fill-upper {
+  background: #d7d7d7;
+}
+
+#stepSize {
+  width: 80px;
+  height: 30px;
+  color: #666;
+  font-family:"Arial";
+  font-size: 18px;
+  text-align: center;
+}
+
+
+.button {
+	display: inline-block;
+	outline: none;
+	cursor: pointer;
+	text-align: center;
+	text-decoration: none;
+	font: 16px/100% 'Microsoft yahei',Arial, Helvetica, sans-serif;
+	padding: .5em 2em .55em;
+	text-shadow: 0 1px 1px rgba(0,0,0,.3);
+	-webkit-border-radius: .5em;
+	-moz-border-radius: .5em;
+	border-radius: .5em;
+	-webkit-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	-moz-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	margin-top: 15px;
+
+}
+.button:hover {
+	text-decoration: none;
+}
+.button:active {
+	position: relative;
+	top: 1px;
+}
+.white {
+	color: #606060;
+	border: solid 1px #b7b7b7;
+	background: #fff;
+	background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#ededed));
+	background: -moz-linear-gradient(top,  #fff,  #ededed);
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#ededed');
+}
+.white:hover {
+	background: #ededed;
+	background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#dcdcdc));
+	background: -moz-linear-gradient(top,  #fff,  #dcdcdc);
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#dcdcdc');
+}
+.white:active {
+	color: #999;
+	background: -webkit-gradient(linear, left top, left bottom, from(#ededed), to(#fff));
+	background: -moz-linear-gradient(top,  #ededed,  #fff);
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#ededed', endColorstr='#ffffff');
+}
